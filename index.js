@@ -38,9 +38,7 @@ const Bamadash = {
 
         }
     },
-    filter(array) {
-        throw new Error("Method not implimented.");
-    },
+    
     size(collection) { 
         if(collection.length==undefined){
             return 0;
@@ -56,5 +54,5 @@ const Bamadash = {
         }
     }
 }
-console.log(Bamadash.castArray([2]));
+
 module.exports = Bamadash;
