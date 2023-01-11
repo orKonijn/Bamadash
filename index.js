@@ -40,19 +40,23 @@ const Bamadash = {
     },
     
     size(collection) { 
+        if(typeof(collection) === "object"){
+            return Object.keys(collection).length;
+        }
         if(collection.length==undefined){
             return 0;
-        }
+        }   
         return collection.length;
     },
     castArray(value) {
         if(Array.isArray(value)){
             return value;
         }
+
         else{
             return arr=[value];
         }
+
     }
 }
-
 module.exports = Bamadash;
