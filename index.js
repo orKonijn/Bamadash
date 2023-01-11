@@ -43,7 +43,7 @@ const Bamadash = {
         if(collection.length==undefined){
             return 0;
         }
-        return collection;
+        return collection.length;
     },
     castArray(value) {
         if(Array.isArray(value)){
